@@ -1,5 +1,19 @@
-import Main from 'components/Main'
+import About from 'components/About';
+import Contact from 'components/Contact';
+import Main from 'components/Main';
+import Services from 'components/Skills';
+import Work from 'components/Works';
 
-export default function Home() {
-  return <Main />
-}
+const Home = () => {
+  return (
+    <>
+      <Main />
+      <About />
+      <Services />
+      <Work />
+      <Contact />
+    </>
+  );
+};
+
+export default Home;
