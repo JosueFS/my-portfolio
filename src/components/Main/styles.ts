@@ -117,7 +117,7 @@ export const ButtonAboutMe = styled.a`
   letter-spacing: 2px;
   border-radius: 4px;
 
-  box-shadow: 0 0 16px ${(props) => props.theme.colors.primary};
+  box-shadow: 0 0 8px ${(props) => props.theme.colors.primary};
 `;
 
 export const Sidebar = styled.div`

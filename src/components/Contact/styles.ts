@@ -12,7 +12,7 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
     font-size: clamp(1rem, 0.9rem + 1vw, 1.6rem);
-    line-height: 64px;
+    line-height: 48px;
 
     > p {
       max-width: 280px;
@@ -21,84 +21,98 @@ export const Container = styled.section`
       &:first-child {
         margin-top: 32px;
       }
+    }
 
-      a {
-        width: 280px;
-        max-height: 64px;
+    > a {
+      position: relative;
+      color: ${(props) => props.theme.colors.white};
+      width: 280px;
+      height: 64px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 16px;
+      padding: 16px;
+      font-size: clamp(1rem, 1.05rem + 1vw, 1.6rem);
+      border: ${(props) => props.theme.colors.white} 2px solid;
+      border-radius: 48px;
+      overflow: hidden;
+
+      > span {
+        position: absolute;
+        width: 160px;
+        height: 48px;
+        transition: all 0.2s;
+      }
+
+      span:first-child {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        margin-top: 16px;
-        padding: 16px;
-        font-size: clamp(1rem, 1.05rem + 1vw, 1.6rem);
-        border: ${(props) => props.theme.colors.white} 2px solid;
-        border-radius: 48px;
+        width: 90%;
+        height: 48px;
+        transition: all 0.3s;
+        transform: translateX(-190px);
+        left: 0;
 
-        > span:first-child {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 48px;
-          height: 64px;
-          transition: all 0.2s;
-
-          span {
-            line-height: 64px;
-            visibility: hidden;
-            margin-left: -80px;
-            font-weight: 600;
-            letter-spacing: 1px;
-          }
-
-          svg {
-            margin: 0 0 0 16px;
-            transition: all 0.2s;
-          }
+        span {
+          width: 160px;
+          line-height: 48px;
+          font-weight: 600;
+          letter-spacing: 1px;
         }
 
-        &:hover {
-          background: ${(props) => props.theme.colors.whatsapp};
-          overflow: hidden;
+        svg {
+          margin: 0 0 0 16px;
+          transition: all 0.3s;
+        }
+      }
 
-          span {
-            &:first-child {
-              width: 100%;
+      span:last-child {
+        right: 20px;
+      }
 
-              span {
-                width: 90%;
-                visibility: visible;
-                margin-left: 0;
-                transition: all 0.2s;
-              }
+      &:hover {
+        background: ${(props) => props.theme.colors.whatsapp};
 
-              svg {
-                -webkit-animation: slide-right 0.5s
-                  cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-                animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                  both;
-                width: 48px;
-                height: 48px;
-              }
+        span {
+          &:first-child {
+            transform: translateX(16px);
+
+            // span {
+            //   width: 90%;
+            //   visibility: visible;
+            //   margin-left: 0;
+            //   transition: all 0.2s;
+            // }
+
+            svg {
+              -webkit-animation: slide-right 0.5s
+                cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+              animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                both;
+              width: 48px;
+              height: 48px;
+              margin-left: 20px;
             }
+          }
 
-            &:last-child {
-              opacity: 0;
-              width: 1px;
-            }
+          &:last-child {
+            opacity: 0;
           }
         }
+      }
 
-        &:not(:hover) {
-          svg {
-            -webkit-animation: slide-left 0.5s
-              cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-            animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          }
+      &:not(:hover) {
+        // svg {
+        //   -webkit-animation: slide-left 0.5s
+        //     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        //   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        // }
 
-          span:last-child {
-            transition: 1.2s;
-            opacity: 1;
-          }
+        span:last-child {
+          transition: 1.2s;
+          opacity: 1;
         }
       }
     }
