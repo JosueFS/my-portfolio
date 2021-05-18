@@ -1,7 +1,7 @@
 import About from 'components/About';
 import Contact from 'components/Contact';
 import Main from 'components/Main';
-import Services from 'components/Skills';
+import Skills from 'components/Skills';
 import Work from 'components/Works';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Main />
       <About />
-      <Services />
+      <Skills />
       <Work />
       <Contact />
     </>

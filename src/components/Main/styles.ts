@@ -34,30 +34,35 @@ export const Container = styled.section`
       screen and (max-device-width: 768px),
       screen and (max-width: 768px) {
       width: 100%;
+      padding: 16px;
+
+      > div {
+        margin-bottom: 16px;
+      }
     }
 
     .logoText {
       width: fit-content;
-      font-size: clamp(1.1rem, 1.1rem + 1vw, 1.6rem);
-      text-transform: uppercase;
+      font-size: clamp(1.4rem, 1.4rem + 1vw, 2rem);
+      /* text-transform: uppercase; */
       letter-spacing: 1px;
       background: ${(props) => props.theme.colors.text};
       color: ${(props) => props.theme.colors.white};
       padding: 0 8px;
-      margin-bottom: 64px;
+      margin-bottom: clamp(1.6rem, 2rem + 2vw, 6.4rem);
     }
 
     div {
-      margin-bottom: 64px;
+      margin-bottom: clamp(1.6rem, 2rem + 2vw + 16vh, 6.4rem);
 
       h4 {
-        font-size: clamp(1.6rem, 1.6rem + 1vw, 2rem);
+        font-size: clamp(1.6rem, 1.6rem + 1vw, 3rem);
         color: ${(props) => props.theme.colors.text};
         font-weight: 300;
 
         span {
           color: ${(props) => props.theme.colors.primary};
-          font-size: clamp(1.6rem, 1.6rem + 1vw, 2rem);
+          font-size: clamp(1.6rem, 1.6rem + 1vw, 3rem);
           font-weight: 700;
         }
       }

@@ -24,7 +24,6 @@ export const Container = styled.footer`
   }
 
   h5 {
-    text-transform: uppercase;
     letter-spacing: 1px;
     background: ${(props) => props.theme.colors.text};
     color: ${(props) => props.theme.colors.white};

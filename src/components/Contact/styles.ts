@@ -104,7 +104,7 @@ export const Container = styled.section`
     }
 
     > ul {
-      margin-top: 64px;
+      margin-top: clamp(1rem, 1rem + 1vw, 6.4rem);
     }
   }
 

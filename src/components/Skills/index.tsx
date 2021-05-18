@@ -1,69 +1,52 @@
 import React from 'react';
+import { SiGithub, SiNodeDotJs, SiReact, SiTypescript } from 'react-icons/si';
 
 import { Container } from './styles';
 
-const Services: React.FC = () => {
+const Skills: React.FC = () => {
   return (
     <>
-      <Container id="services">
+      <Container id="skills">
         <header>
-          <h2>What I Do</h2>
-          <p>Modern design creation</p>
+          <h2>Skills</h2>
+          <p>I learning about create modern systems and beautiful interfaces</p>
         </header>
 
         <main>
           <div>
-            <img src="./img/icon1.png" />
-            <h2>Web Design</h2>
-            <p>
-              Nulla reprehenderit consequuntur deserunt autem ducimus
-              repellendus mollitia illum in error vitae, iusto ullam vero.
-            </p>
+            <SiNodeDotJs size={120} color="#3C823C" />
+            <h2>Node.js</h2>
+            <p>Back-end</p>
           </div>
 
           <div>
-            <img src="./img/icon2.png" />
-            <h2>Web Development</h2>
-            <p>
-              Nulla reprehenderit consequuntur deserunt autem ducimus
-              repellendus mollitia illum in error vitae, iusto ullam vero.
-            </p>
+            <SiReact size={120} color="#61DAFB" />
+            <h2>React</h2>
+            <p>Front-end</p>
           </div>
 
           <div>
-            <img src="./img/icon3.png" />
-            <h2>Android Apps</h2>
-            <p>
-              Nulla reprehenderit consequuntur deserunt autem ducimus
-              repellendus mollitia illum in error vitae, iusto ullam vero.
-            </p>
+            <SiReact size={120} color="#292A90" />
+            <h2>React Native</h2>
+            <p>Mobile Android/iOS</p>
           </div>
 
           <div>
-            <img src="./img/icon4.png" />
-            <h2>Photography</h2>
-            <p>
-              Nulla reprehenderit consequuntur deserunt autem ducimus
-              repellendus mollitia illum in error vitae, iusto ullam vero.
-            </p>
+            <SiTypescript size={120} color="#3374C0" />
+            <h2>Typescript</h2>
+            <p>Javascript superset</p>
           </div>
 
           <div>
-            <img src="./img/icon5.png" />
-            <h2>Content Writing</h2>
-            <p>
-              Nulla reprehenderit consequuntur deserunt autem ducimus
-              repellendus mollitia illum in error vitae, iusto ullam vero.
-            </p>
+            <img src="./img/styled-components.png" />
+            <h2>Styled Components</h2>
+            <p>CSS-in-JS Tool</p>
           </div>
 
           <div>
-            <img src="./img/icon6.png" />
-            <h2>Video Editor</h2>
-            <p>
-              Nulla reprehenderit consequuntur deserunt autem ducimus
-              repellendus mollitia illum in error vitae, iusto ullam vero.
-            </p>
+            <SiGithub size={120} color="#0D1117" />
+            <h2>Github</h2>
+            <p>Code hosting for repositories</p>
           </div>
         </main>
       </Container>
@@ -71,4 +54,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default Skills;

@@ -3,7 +3,7 @@ import { Container } from './styles';
 const Footer = () => {
   return (
     <Container>
-      <h5 className="logoText">My_Portfolio</h5>
+      <h5 className="logoText">JosueFS</h5>
 
       <ul>
         <li>
@@ -13,7 +13,7 @@ const Footer = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
           <a href="#work">Works</a>

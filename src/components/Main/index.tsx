@@ -26,7 +26,7 @@ const Main: React.FC = () => {
         </div>
 
         <div className="contentBx">
-          <h5 className="logoText">My_Portfolio</h5>
+          <h5 className="logoText">JosueFS</h5>
           <div>
             <h4>
               <span>Hello</span>, I'm
@@ -65,8 +65,8 @@ const Main: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="#services" onClick={toggleMenu}>
-              Services
+            <a href="#skills" onClick={toggleMenu}>
+              Skills
             </a>
           </li>
           <li>

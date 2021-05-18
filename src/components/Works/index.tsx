@@ -16,75 +16,69 @@ const Work: React.FC = () => {
 
         <main>
           <article>
-            <div>
-              <img src="./img/img1.jpg" />
-            </div>
-            <div>
-              <h3>Project #01</h3>
-            </div>
+            <a
+              href="https://github.com/JosueFS/gobarber-web"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./img/gobarber.png" />
+              <h3>GoBarber #01</h3>
+            </a>
           </article>
 
           <article>
-            <div>
-              <img src="./img/img2.jpg" />
-            </div>
-            <div>
-              <h3>Project #02</h3>
-            </div>
+            <a
+              href="https://github.com/JosueFS/Ecoleta-NLW"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./img/ecoleta.png" />
+              <h3>Ecoleta #02</h3>
+            </a>
           </article>
 
           <article>
-            <div>
-              <img src="./img/img3.jpg" />
-            </div>
-            <div>
-              <h3>Project #03</h3>
-            </div>
+            <a
+              href="https://github.com/JosueFS/Be-The-Hero"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./img/bethehero.png" />
+              <h3>Be The Hero #03</h3>
+            </a>
           </article>
 
           <article>
-            <div>
-              <img src="./img/img4.jpg" />
-            </div>
-            <div>
-              <h3>Project #04</h3>
-            </div>
+            <a
+              href="https://github.com/JosueFS/GamingWebsite"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./img/project1.png" />
+              <h3>Playstation 5 UI Concept #04</h3>
+            </a>
           </article>
 
           <article>
-            <div>
-              <img src="./img/img5.jpg" />
-            </div>
-            <div>
-              <h3>Project #05</h3>
-            </div>
+            <a
+              href="https://github.com/JosueFS/labluby-react"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./img/github-profiles.png" />
+              <h3>Github Profiles #05</h3>
+            </a>
           </article>
 
           <article>
-            <div>
-              <img src="./img/img6.jpg" />
-            </div>
-            <div>
-              <h3>Project #06</h3>
-            </div>
-          </article>
-
-          <article>
-            <div>
-              <img src="./img/img7.jpg" />
-            </div>
-            <div>
-              <h3>Project #07</h3>
-            </div>
-          </article>
-
-          <article>
-            <div>
-              <img src="./img/img8.jpg" />
-            </div>
-            <div>
-              <h3>Project #08</h3>
-            </div>
+            <a
+              href="https://github.com/JosueFS"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./img/my-profile.png" />
+              <h3>More Projects</h3>
+            </a>
           </article>
         </main>
       </Container>

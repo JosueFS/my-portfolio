@@ -26,7 +26,7 @@ const About: React.FC = () => {
           </div>
 
           <div>
-            <img src="./img/bg2.jpg" />
+            <img src="./img/bg5.jpg" />
           </div>
         </main>
       </Container>
